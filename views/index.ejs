@@ -1,23 +1,151 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang=en-US>
 <head>
-    <title>Discover Destinations</title>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+
+    <title>Tipi - The home for moving to better places.</title>
+
+    <script src="/static/js/google-analytics.js"></script>
+
+    <meta name="twitter:card" content="app">
+    <meta name="twitter:site" content="@usetipi">
+    <meta name="twitter:description"
+          content="The home for moving to better places. Where America's Young & Hungry move together.">
+
+    <meta name="keywords" content="Tipi">
+    <meta name="description"
+          content="The home for moving to better places. Where America's Young & Hungry move together.">
+
+    <meta property="og:title" content="Tipi - The home for moving to better places."/>
+    <meta property="og:url" content="https://usetipi.com"/>
+    <meta property="og:image" content="https://usetipi.com/logo.jpg"/>
+    <meta property="og:image:type" content="image/jpeg"/>
+    <meta property="og:image:width" content="100"/>
+    <meta property="og:image:height" content="100"/>
+    <meta property="og:description"
+          content="The home for moving to better places. Where America's Young & Hungry move together."/>
+
+    <link rel="shortcut icon" href="/favicon.ico"/>
+    <link rel="apple-touch-icon" sizes="100x100" href="/static/assets/icon_100.png">
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+
+
+</head>
+<body class="header-white header-selected-home">
+
+
+<div style="height:46px;">
     <style>
-        body {
-            padding-top: 80px;
+        .header-container {
+            position: fixed;
+            width: 100%;
+            font-size: 14px;
+            background-color: #FFFC00;
+            height: 46px;
+            line-height: 46px;
+            z-index: 1000;
+        }
+
+        .globalnav-container {
+            width: 92.3%;
+            max-width: 960px;
+            margin: auto;
+        }
+
+        .globalnav-container .globalnav-item {
+            margin-right: 49px;
+            display: inline;
+            padding: 2px;
+        }
+
+        .globalnav-container .globalnav-item:hover {
+            border-bottom: 2px solid rgba(38, 38, 38, 0.5);
+        }
+
+        .header-selected-home .globalnav-home-link,
+        .sc-header-selected-geofilters .globalnav-geofilters-link,
+        .sc-header-selected-live .globalnav-live-link,
+        .sc-header-selected-snapcodes .globalnav-snapcodes-link,
+        .sc-header-selected-ads .globalnav-ads-link,
+        .sc-header-selected-download .globalnav-download-link {
+            border-bottom: 2px solid rgb(38, 38, 38);
+        }
+
+        .globalnav-container .globalnav-link {
+            color: rgb(38, 38, 38);
+            font-weight: 800;
+            text-decoration: none;
+            line-height: 25px;
+        }
+
+        .globalnav-container .globalnav-tipi-icon-link {
+            position: absolute;
+            top: 9px;
+        }
+
+        .globalnav-container .globalnav-home-link {
+            visibility: hidden;
+        }
+
+        .header-white .header-container,
+        .header-white.header-container {
+            background-color: white;
+        }
+
+        html, body, #homepage{height:100%; margin:0;padding:0}
+
+        .container-fluid{
+            height:100%;
+            display:table;
+            width: 100%;
+            padding: 0;
+        }
+
+        .row-fluid {height: 100%; display:table-cell; vertical-align: middle;}
+
+        .centering {
+            float:none;
+            margin:0 auto;
+        }
+
+        #homepage {
+            background-color: lightskyblue;
         }
     </style>
-</head>
-<body>
-<div class="container">
-
-    <div class="jumbotron text-center">
-        <h1><span class="fa fa-lock"></span> Discover Destinations</h1>
-        <p>Login or Register with:</p>
-        <a href="/auth/facebook" class="btn btn-primary"><span class="fa fa-facebook"></span> Facebook</a>
+    <div class="header-container">
+        <div class="globalnav-container">
+            <div class="globalnav-item" style="margin-right: 113px;">
+            <a href="/" class="globalnav-tipi-icon-link"><img
+                        src="/static/solid-glow-web-png-min.png" alt="TIPI"
+                        style="height:64px;"/></a>
+            </div>
+            <div class="globalnav-item"><a class="globalnav-link"
+                                                                     href="https://medium.com/@useTipi">Blog</a>
+            </div>
+            <div class="globalnav-item"><a class="globalnav-link"
+                                                                    href="/survey">Survey</a></div>
+            <div class="globalnav-item"><a class="globalnav-link"
+                                                              href="/about">About</a></div>
+            </div>
+        </div>
     </div>
+</div>
+
+<!-- Content -->
+<div id="homepage">
+        <div class="homepage-inner container-fluid">
+            <div class="row-fluid container">
+
+                <div class="centering text-center">
+                    <h1>The home for moving to better places </h1>
+                    <p>Connect with Facebook and discover destination together:</p>
+                    <a href="/auth/facebook" class="btn btn-primary"><span class="fa fa-facebook"></span> Facebook</a>
+                </div>
+            </div>
+        </div>
 </div>
 </body>
 </html>

@@ -6,3 +6,4 @@ config/auth.js
 package-lock.json
 
 .idea
+.DS_Store
