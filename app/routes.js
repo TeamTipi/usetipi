@@ -4,15 +4,17 @@ module.exports = function(app, passport) {
 
     // show the home page (will also have our login links)
     app.get('/', function(req, res) {
-        res.render('index.ejs');
-    });
-
-    // PROFILE SECTION =========================
-    app.get('/survey', isLoggedIn, function(req, res) {
-        res.render('survey.ejs', {
+        res.render('_site/index.ejs', {
             user : req.user
         });
     });
+    //
+    // // PROFILE SECTION =========================
+    // app.get('/survey', isLoggedIn, function(req, res) {
+    //     res.render('survey.ejs', {
+    //         user : req.user
+    //     });
+    // });
 
     // LOGOUT ==============================
     app.get('/logout', function(req, res) {
@@ -30,7 +32,7 @@ module.exports = function(app, passport) {
         // handle the callback after facebook has authenticated the user
         app.get('/auth/facebook/callback',
             passport.authenticate('facebook', {
-                successRedirect : '/survey',
+                successRedirect : '/',
                 failureRedirect : '/'
             }));
 
