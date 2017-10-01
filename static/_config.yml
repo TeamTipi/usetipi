@@ -1,12 +1,13 @@
 # Site settings
 title:
-email:
+email: contact@teamtipi.com
 description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
 
-twitter_username:
-github_username:
+twitter_username: usetipi
+facebook_username: usetipi
+instagram_username: teamtipi
 
 # Build settings
 markdown: kramdown
