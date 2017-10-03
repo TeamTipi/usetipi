@@ -1,6 +1,6 @@
 # Site settings
 title:
-email: contact@teamtipi.com
+email: info@teamtipi.com
 description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
@@ -8,6 +8,7 @@ url: "" # the base hostname & protocol for your site
 twitter_username: usetipi
 facebook_username: usetipi
 instagram_username: teamtipi
+medium_username: usetipi
 
 # Build settings
 markdown: kramdown
