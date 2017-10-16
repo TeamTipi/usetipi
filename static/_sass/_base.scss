@@ -27,6 +27,13 @@ a {
     }
 }
 
+a.secondary{
+    &:hover,
+    &:focus {
+        color: $theme-secondary;
+    }
+}
+
 h1,
 h2,
 h3,
